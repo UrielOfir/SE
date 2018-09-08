@@ -1,0 +1,53 @@
+<html>
+<meta charset="utf-8" >
+
+    <head>
+        
+        <title>משחק האצבעות</title>
+          	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+    <body>
+			<div id=announcement>
+				<div id=annText>ברוכים הבאים למשחק האצבעות<br>
+				בהצלחה!<br>
+				<input id="player1" placeholder="שם השחקן הראשון"></input><br>
+				<input id="player2" placeholder="שם השחקן השני"></input><br>
+				<button id=btnOK style=margin-top:10px>אישור</button>
+				<button id=btnInst style=margin-top:10px>הוראות המשחק</button>
+				</div>
+				
+				<div id=instructions>
+				הוראות:<br>
+				המשחק מתחיל כשכל אחד מהשחקנים מוציא אצבע מכל אחת מיד ומניח את ידיו לפני היריב.<br>
+				המטרה היא לגרום לשתי הידים של היריב להיות סגורות ללא אצבעות בחוץ.<br>
+				כל אחד בתורו מניח אחת מידיו על אחת מידיו של יריבו.<br>
+				מי שהונחה עליו היד פותח אצבעות נוספות כמספר האצבעות שהניח עליו היריב.<br>
+				אם היתה לו אצבע אחת פתוחה והניחו עליו יד עם שתי אצבעות פתוחות אז הוא יפתח כעת שלוש אצבעות.<br>
+				במצב בו צריך לפתוח חמש אצבעות היד נסגרת.<br>
+				אם צריך לפתוח יותר מחמש אצבעות פותחים אצבעות כמספר השארית אחרי חמש.<br>
+				לדוגמא אם יד עם ארבע אצבעות מונחת על יד עם ארבע אצבעות, מי שהונחה עליו היד יפתח שלוש אצבעות. (8-5=3)<br>
+				כאשר היד סגורה וביד השניה יש מספר זוגי של אצבעות אפשר לחלק את האצבעות בין הידים.<br>
+				אם ביד הפתוחה יש שתי אצבעות אפשר להעביר אצבע ליד הסגורה ולהיות עם אצבע אחת בכל יד.<br>
+				אם ביד הפתוחה ארבע אצבעות אפשר לפצל לשתי אצבעות בכל יד.<br>
+				לאחר הפיצול התור עובר ליריב.<br><br>
+				משחק מהנה
+				<br>
+				<button id=btnBack style=margin-top:10px>חזרה</button>
+				</div>
+				
+			</div>
+		
+		<center>	
+			<img id="1" data-hand="hand-up-right-1" src="images/up-right-1.jpg"> 
+			<img id="2" data-hand="hand-up-left-1" src="images/up-left-1.jpg"> 
+			<BR>
+					
+			<img id="3" data-hand="hand-bottom-left-1" src="images/bottom-left-1.jpg"> 			
+			<img id="4" data-hand="hand-bottom-right-1" src="images/bottom-right-1.jpg"> 
+				</center>
+	<script type="text/javascript" src="javaScript.js"></script>
+	
+
+</body>
+</html>
