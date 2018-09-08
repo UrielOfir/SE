@@ -2,7 +2,7 @@
 #announcement
 {
 	direction: rtl;
-	display: table;
+	display: inline;
 	position: absolute;
 	height:75%;
 	width:75%;
@@ -16,28 +16,32 @@
 #annText{
 	font: bold 50px Arial;
 	display: table-cell;
+	margin:auto;
+	width:50%;
+	padding-top:20px;
 	vertical-align: middle;
 	text-align:center;
 	
 	
 }
 
-#Instructions
+#instructions
 {
-	margin-top:30px;
+	display:none;
+	margin:auto;
+	height:50%;
+	margin-top:10px;
 	font: bold 17px Arial;
 	line-height: 1.5;
 	text-align:center;
-	display:none;   
+}
+.button
+{
+	margin:10px;
 }
 
 img
 {
-	height:300;
-	width:250;
-}
-
-.hide
-{
-	display:none;
+	height:300px;
+	width:250px;
 }
