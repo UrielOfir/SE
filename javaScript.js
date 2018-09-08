@@ -51,13 +51,6 @@ hand2.elem.addEventListener("click", function(event){clicked(hand2)});
 hand3.elem.addEventListener("click", function(event){clicked(hand3)});
 hand4.elem.addEventListener("click", function(event){clicked(hand4)});
 
-handMap=[hand1,hand2,hand3,hand4]
-
-playRandom(){
-	clicked(handsMap[math.floor(math.random()*4)];
-}
-
-
 function clicked(hand){
 	if (hand.player.turn&&hand.choose==false&&handWasChose==false&&hand.fingers!=0)
 	{
@@ -92,10 +85,7 @@ function clicked(hand){
 		hand.elem.src=hand.elem.src.slice(0,-5)+hand.fingers+".jpg";
 		lastHand.elem.style.filter="blur(0px)";
 		lastHand.choose=false;
-		chek();
-		if (player2.turn==true)
-			playRandom();
-		
+		chek();	
 	}
 
 }
