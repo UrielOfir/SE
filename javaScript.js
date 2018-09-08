@@ -15,13 +15,11 @@ btnOK=document.getElementById("btnOK");
 btnInst=document.getElementById("btnInst");
 btnBack=document.getElementById("btnBack");
 
-function hide(elem)
-{
+function hide(elem){
 	elem.style.display="none";
 }
 
-function show(elem)
-{
+function show(elem){
 	elem.style.display="table";
 }
 
@@ -53,10 +51,14 @@ hand2.elem.addEventListener("click", function(event){clicked(hand2)});
 hand3.elem.addEventListener("click", function(event){clicked(hand3)});
 hand4.elem.addEventListener("click", function(event){clicked(hand4)});
 
+handMap=[hand1,hand2,hand3,hand4]
+
+playRandom(){
+	clicked(handsMap[math.floor(math.random()*4)];
+}
 
 
-function clicked(hand)
-{
+function clicked(hand){
 	if (hand.player.turn&&hand.choose==false&&handWasChose==false&&hand.fingers!=0)
 	{
 		
@@ -91,13 +93,14 @@ function clicked(hand)
 		lastHand.elem.style.filter="blur(0px)";
 		lastHand.choose=false;
 		chek();
+		if (player2.turn==true)
+			playRandom();
 		
 	}
 
 }
 
-function chek()
-{
+function chek(){
 	if(hand1.fingers==0&&hand2.fingers==0)
 	{
 		winner(player2);
