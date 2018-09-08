@@ -72,7 +72,6 @@ function makeClick(){
 	hand3.elem.onclick=function(e){clicked(hand3)};
 	hand4.elem.onclick=function(e){clicked(hand4)};
 }
-
 function stopClick(){
 	hand1.elem.onclick=null;
 	hand2.elem.onclick=null;
@@ -89,8 +88,6 @@ function playRandom(){
 	setTimeout(function(event){clicked(handsMap[Math.floor(Math.random()*2+2)])},1000);
 	}
 }
-
-
 function clicked(hand){
 	if (hand.player.turn&&hand.choose==false&&handWasChose==false&&hand.fingers!=0)
 	{
@@ -146,6 +143,7 @@ function clicked(hand){
 		hand.elem.src=hand.elem.src.slice(0,-5)+hand.fingers+".jpg";
 		lastHand.elem.style.filter="blur(0px)";
 		lastHand.choose=false;
+
 		chek();
 		if (computer&&player2.turn==true){
 			playRandom();
@@ -158,6 +156,7 @@ function clicked(hand){
 			if (computer&&player2.turn==true){
 				playRandom();
 		}
+
 	}
 }
 
